@@ -43,3 +43,6 @@ Thumbs.db
 .vscode/
 
 # Keep documentation screenshots and authored app icons tracked.
+
+# Published watchface version explicitly included with its documentation.
+!faces/l1d-rain-r14.face

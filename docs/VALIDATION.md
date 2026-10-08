@@ -1,6 +1,6 @@
 # 验证记录
 
-记录日期：2026-10-08。以下区分历史协议验证、本次 R13 文件验证以及 0.2.0 新界面的验证，避免互相替代。
+记录日期：2026-10-08。以下区分历史协议验证、R14 与历史 R13 文件验证以及 0.2.0 新界面的验证，避免互相替代。
 
 ## 0.2.0 Android 交付
 
@@ -19,9 +19,29 @@
 | 0.2.0 新 UI 操作与真实传输 | 尚未记录端到端验证证据 |
 | 公开 Release 下载 | 通过：公开仓库与非草稿 v0.2.0 Release；不带凭据下载 APK、R13、ZIP 和校验清单，全部摘要一致，ZIP 内中文文件名及 APK 字节一致 |
 
-发布文件：[直接下载 APK](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.apk)／[中文文件名 ZIP](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.zip)。下载链接已在 2026-10-08 匿名验证。
+发布文件：[直接下载 APK](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/download/v0.2.0/xiaomi-watch-relay.apk)／[中文文件名 ZIP](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/download/v0.2.0/xiaomi-watch-relay.zip)。下载链接已在 2026-10-08 匿名验证。
 
-## R13 原生表盘
+## R14 原生表盘
+
+本次在仓库提交独立 `.face`、说明和截图，最新 `r14` Release 发布新版表盘、README 与校验清单；不重建 0.2.0 APK，其内置资源仍是 R13。R14 的变更是熄屏 Q 版人物面向观看者右侧的腿（人物左腿）改为白色过膝袜。亮屏动态与排版沿用 R13，没有加入压力条件动画。
+
+| 项目 | 当前记录 |
+| --- | --- |
+| 文件 | `l1d-rain-r14.face`；仓库路径 `faces/l1d-rain-r14.face` |
+| 包 ID／名称 | `941006214` / `L1D Rain R14` |
+| 文件大小／SHA-256 | 26,552,338 字节；`4c5d57248dc5af23047591f9dbf5054b07f6c3decd99390f47e8c2a1ff531406` |
+| 目标／原生结构 | Q63、464×464、原生 `0x800`、两个主题；最终解析无 warnings |
+| 主表盘项目验证 | `typecheck` 通过；12 文件／46 项原生测试通过；极简与 9 款历史基线共 10 项通过，摘要与基线一致；`verify:export` 通过，1,274 个源码文件 |
+| 原生回读截图 | [亮屏](screenshots/r14-active.png)／[熄屏](screenshots/r14-aod.png)，464×464、模拟数值，已核对截图与构建输出字节一致 |
+| 亮屏动态与排版 | 与 R13 的 240 帧原生 RGBA 全部一致，240 张完整 PNG 像素及字节一致；亮屏与熄屏组件布局不变 |
+| 熄屏白袜 | 已目视核对观看者右侧／人物左腿白袜，对侧黑袜；原生差异仅在一张熄屏人物图，14,229 像素变化全部位于人物素材范围，时钟、公历、农历不变 |
+| 熄屏亮区 | 约 10.48%，低于构建检查的 15% 上限；不是耗电实测 |
+| 文件传入手机／真机安装 | 本次未传输、未安装；由用户之后自行导入 |
+| 公开 r14 Release 下载 | 待发布后匿名下载并核对摘要 |
+
+R14 发布链接：[l1d-rain-r14.face](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/l1d-rain-r14.face)。构建验证与真机安装是独立证据，不能互相替代。
+
+## R13 原生表盘（历史／APK 内置）
 
 | 项目 | 结果 |
 | --- | --- |
