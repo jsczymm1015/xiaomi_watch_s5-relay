@@ -1,0 +1,45 @@
+# Build outputs, local toolchains and signing material
+build/
+*.apk
+*.aab
+*.dex
+*.class
+*.keystore
+*.jks
+*.key
+*.pem
+*.p12
+*.pfx
+*.face
+*.bin
+.android/
+.local/
+sdk/
+android-sdk/
+node_modules/
+__pycache__/
+*.py[cod]
+
+# Connection exports, logs, credentials and private scratch data
+*.zip
+*.log
+*.log.*
+logs/
+wearablelog/
+private/
+tmp/
+cache/
+.env
+.env.*
+credentials*.json
+connection-info*.json
+authkey*.txt
+encryptkey*.txt
+
+# Host/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Keep documentation screenshots and authored app icons tracked.

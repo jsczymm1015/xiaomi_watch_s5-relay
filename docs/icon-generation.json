@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen built-in",
+  "asset": "../res/drawable-nodpi/launcher_art.png",
+  "prompt": "Production Android launcher icon: same L1D chibi girl with short dark bob, white forelock, grey eyes and silver headphones inside a refined round silver watch bezel. Restrained warm charcoal, pearl white and rain-night greys; readable at 48 px. Centered character and watch; no text, numbers, logos, watermark, neon or terminal styling.",
+  "referenceRoles": {
+    "projects/l1d-rain/aod/rear-chibi-cutout-v1.png": "character identity",
+    "projects/l1d-rain/source.png": "rain-night world and watch-face style"
+  },
+  "postProcessing": "Technical Lanczos resize, transparent padding for adaptive icon safe area, round launcher mask. No artwork repainting.",
+  "androidResources": ["@mipmap/ic_launcher", "@mipmap/ic_launcher_round"],
+  "sourceDimensions": "1254x1254 opaque RGB",
+  "validation": "Generated artwork and enlarged 48 px square/round launcher previews inspected. Character white forelock, headphones and round watch bezel remain recognizable. Adaptive foreground 1080x1080 with alpha; five launcher densities 48/72/96/144/192 px verified; XML well-formed. Android resource compilation belongs to the APK build."
+}
