@@ -4,12 +4,12 @@
 
 ## 0.2.0 Android 交付
 
-本版目标为高级连接／传输界面，默认内置 R13，继续使用现有协议后端与发布签名。以下记录本次已取得的构建与测试结果；手机操作与公开下载仍须分别验证。
+本版目标为高级连接／传输界面，默认内置 R13，继续使用现有协议后端与发布签名。以下记录本次已取得的构建与测试结果；手机操作与公开下载分别记录。
 
 | 项目 | 当前记录 |
 | --- | --- |
 | APK 版本 | `0.2.0` / versionCode `5`，APK badging 与手机包信息一致 |
-| Java 协议测试 | 本次 51 项通过，已包含最终 Watch 名称筛选改动 |
+| Java 协议测试 | 最终源码下 51 项协议测试通过；Watch 列表筛选已静态检查，未列入主机协议测试 |
 | Android 编译 | 通过：javac、D8、aapt2、zipalign 与 APK v2/v3 签名核验 |
 | APK v2/v3 签名、zipalign | 通过：javac、D8、aapt2、zipalign 与 APK v2/v3 签名核验 |
 | 与已有安装的签名一致性 | 通过，与 0.1.3 的 SHA-256 证书摘要一致；不发布私钥 |
@@ -17,9 +17,9 @@
 | 内置表盘摘要 | 通过，从 APK 的 assets/bundled.face 解出计算，与 R13 完全一致 |
 | 0.2.0 手机上安装与启动 | ADB 覆盖安装返回 Success；版本 0.2.0/code5，启动命令成功且进程存活，未见该进程 AndroidRuntime 崩溃记录 |
 | 0.2.0 新 UI 操作与真实传输 | 尚未记录端到端验证证据 |
-| 公开 Release 下载 | 待发布后匿名下载并核对摘要 |
+| 公开 Release 下载 | 通过：公开仓库与非草稿 v0.2.0 Release；不带凭据下载 APK、R13、ZIP 和校验清单，全部摘要一致，ZIP 内中文文件名及 APK 字节一致 |
 
-发布文件：[小米手表中转.apk](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/%E5%B0%8F%E7%B1%B3%E6%89%8B%E8%A1%A8%E4%B8%AD%E8%BD%AC.apk)。本记录不把计划链接当作已发布证据。
+发布文件：[直接下载 APK](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.apk)／[中文文件名 ZIP](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.zip)。下载链接已在 2026-10-08 匿名验证。
 
 ## R13 原生表盘
 

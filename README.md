@@ -1,10 +1,12 @@
 # xiaomi_watch_s5 中转
 
-**[下载 小米手表中转.apk（0.2.0）](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/%E5%B0%8F%E7%B1%B3%E6%89%8B%E8%A1%A8%E4%B8%AD%E8%BD%AC.apk)** · [查看所有发布文件](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest)
+**[下载 小米手表中转.apk（0.2.0，ZIP 内保留中文文件名）](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.zip)** · [直接下载 APK](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.apk) · [查看所有发布文件](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest)
 
 用于 **小米 Watch S5 41mm / Q63 / 464×464** 的原生 Android 表盘中转工具。通过蓝牙连接、手表认证、分块传输、安装和应用回读，把原生 `.face` 设置为当前表盘。Android 8.0 及以上；版本 0.2.0 默认内置 **L1D · 雨夜同伴 R13，ID `941006213`**，也可通过系统文件选择器导入表盘。
 
 0.2.0 更新连接与传输界面，沿用已验证的协议流程和现有发布签名。新界面的最终编译、安装及真机验证状态以 [验证记录](docs/VALIDATION.md) 为准，不把旧版安装成功当作新版验证。
+
+GitHub 附件会改写纯中文文件名，因此 ZIP 解压后是 `小米手表中转.apk`；直接下载版名为 `xiaomi-watch-relay.apk`，两者 APK 内容及签名完全一致。
 
 ## R13 预览
 
@@ -18,7 +20,7 @@
 
 ## 开始使用
 
-1. 安装上面的 APK，在系统提示时授予附近设备／蓝牙权限。
+1. 下载 ZIP 并解压出 `小米手表中转.apk`，或直接下载 APK，安装后，在系统提示时授予附近设备／蓝牙权限。
 2. 先用小米运动健康正常绑定手表；在手机本地导出连接日志，通过本 App 的系统文件选择器导入连接信息。无需把原日志或密钥发送给他人。
 3. 搜索并选择自己的手表，使用内置 R13 或选择本地 `.face`，点击“连接、安装并应用”。**先尝试已有绑定连接；只有连接失败且手表提示时，才进入“连接新手机”。**
 4. 按手机和手表的系统提示操作，传输期间保持 App 前台。只有安装响应、应用确认和当前表盘列表回读全部通过，才显示最终成功。

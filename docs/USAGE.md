@@ -1,12 +1,12 @@
 # 手机上使用
 
-仅适用于小米 Watch S5 **41mm / Q63**。先安装 [小米手表中转.apk](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/%E5%B0%8F%E7%B1%B3%E6%89%8B%E8%A1%A8%E4%B8%AD%E8%BD%AC.apk)，准备已通过小米运动健康绑定的手表。首次启动按系统提示授予蓝牙／附近设备权限；Android 11 及以下扫描还可能要求定位权限。
+仅适用于小米 Watch S5 **41mm / Q63**。先安装 [小米手表中转.apk（ZIP 内中文文件名）](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.zip)（解压后安装），也可[直接下载 APK](https://github.com/jsczymm1015/xiaomi_watch_s5-relay/releases/latest/download/xiaomi-watch-relay.apk)，准备已通过小米运动健康绑定的手表。首次启动按系统提示授予蓝牙／附近设备权限；Android 11 及以下扫描还可能要求定位权限。
 
 ## 导入连接信息
 
 1. 先让小米运动健康正常连接并同步手表。
 2. 如果当前运动健康版本提供导出入口，可在“我的 → 关于”连续点击顶部 App 图标约 10 次，再按提示导出日志。入口和内容会随版本改变，并非所有版本都提供有效连接字段。
-3. 回到中转 App，点击“从运动健康日志导入连接信息”，通过系统文件选择器选择自己手机中最新导出的日志 ZIP／文本。常见位置是 `Download/wearablelog`；以手机实际导出位置为准。
+3. 回到中转 App，点击“导入连接信息”，通过系统文件选择器选择自己手机中最新导出的日志 ZIP／文本。常见位置是 `Download/wearablelog`；以手机实际导出位置为准。
 4. 确认界面显示导入成功，再搜索、选择自己的手表。
 
 已配对与搜索列表仅显示名称含 `Watch` 的设备（忽略大小写）；名称不同的设备不显示，出现在列表中并不意味着已通过 Q63 身份验证。
